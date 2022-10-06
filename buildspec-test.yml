@@ -9,10 +9,11 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on  running npm 
-			- npm install
-			- echo Build started on `date` running ./cli2.sh
-      - ./cli2.sh
+      - echo Build started on `date` running ./cli.sh
+      - ./cli.sh
   post_build:
     commands:
       - echo Build completed on `date`
+# artifacts:
+#   files:
+#     - target/messageUtil-1.0.jar
