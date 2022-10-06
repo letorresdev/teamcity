@@ -16,6 +16,7 @@ function stop() {
 	server.close();
 }
 
+console.log("====== changin ===== ")
 module.exports = server;
 module.exports.stop = stop;
 
