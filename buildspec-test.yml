@@ -9,8 +9,8 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date` running ./cli.sh
-      - ./cli.sh
+      - echo Build started on `date` running ./cli2.sh
+      - ./cli2.sh
   post_build:
     commands:
       - echo Build completed on `date`
