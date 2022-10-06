@@ -17,4 +17,5 @@ function stop() {
 }
 
 module.exports = server;
-module.exports = stop;
+module.exports.stop = stop;
+
