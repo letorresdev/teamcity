@@ -1,5 +1,7 @@
 # https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
+echo $ENV-DELETE
+echo $ENV-DELETE-2
 echo "Creating image"
 docker build . -t exampleapp/node-web-app
 
