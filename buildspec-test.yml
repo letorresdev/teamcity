@@ -4,10 +4,17 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-	pre_build:
+  pre_build:
     commands:
-      - echo installing dependencies ...
-			- npm install
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - npm test
+      - echo Build started on `date` running ./cli2.sh
+      - ./cli2.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
+# artifacts:
+#   files:
+#     - target/messageUtil-1.0.jar
+
